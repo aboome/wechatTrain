@@ -1,0 +1,480 @@
+.weui-navbar {
+	background-color: #0E7ABD;
+	height: 40px;
+	display: block;
+	text-align: center;
+}
+
+.yh-nav {
+	background-color: #F1EDEF;
+	height: 36px;
+}
+
+.yh-nav .yh-navbar-on {
+	background: #FFFFFF !important;
+	color: #E88475 !important;
+}
+
+.yh-nav .weui-btn_default {
+	background-color: inherit;
+	color: #5B5B5B;
+}
+
+@media screen and (max-width: 320px) {
+	.yh-nav .weui-btn_mini {
+		margin-top: 5px;
+		padding-left: 3.5%;
+		padding-right: 3.5%;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+	.yh-nav .weui-btn_mini {
+		margin-top: 5px;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+	.yh-nav .weui-btn_mini {
+		margin-top: 5px;
+		padding-left: 4.4%;
+		padding-right: 4.4%;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+	.yh-nav .weui-btn_mini {
+		margin-top: 5px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (min-width: 415px) {
+	.yh-nav .weui-btn_mini {
+		margin-top: 5px;
+		padding-left: 5.5%;
+		padding-right: 5.5%;
+	}
+}
+
+.weui-btn {
+	border-radius: 4px;
+}
+
+.weui-btn:after {
+	border: 0;
+}
+
+.weui-btn_mini {
+	line-height: 2;
+	margin-top: 7px;
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+}
+
+.weui-btn+.weui-btn {
+	margin-top: 0;
+}
+
+.weui-btn_default {
+	background-color: #3A9BFD;
+	color: #FFFFFF;
+}
+
+.yh-btn-left {
+	margin-right: -12px;
+}
+
+.yh-navbar-on {
+	background: #FFFFFF;
+	color: #000000;
+	z-index: 1;
+}
+
+.weui-navbar+.weui-tab__panel {
+	padding-top: 0;
+}
+
+.yh-search {
+	font-size: 23px;
+	color: #C9C9CD;
+	position: absolute;
+	top: 8px;
+	right: 15px;
+}
+
+.yh-search-control {
+	width: 100%;
+	height: 30px;
+	padding: 5px 15px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	box-sizing: inherit;
+	background-color: inherit
+}
+
+.yh-search-control .weui-search-bar__input {
+	width: 82%;
+	height: 30px;
+	border: 0;
+	-webkit-appearance: none;
+	border-radius: 4px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.weui-search-bar__cancel-btn {
+	display: inline-block;
+	height: 100%;
+	color: #FFFFFF;
+	margin-left: -12px;
+}
+
+.weui-search-bar:before {
+	border-top: 0;
+}
+
+.weui-navbar:after {
+	border: 0;
+}
+
+.yh-select {
+	background-color: #F5F5F5;
+	height: 36px;
+	line-height: 36px;
+	padding: 0px 15px;
+}
+
+.weui-select {
+	height: 26px;
+	line-height: 27px;
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	border: 1px solid #DBDBDB;
+	border-radius: 2px;
+}
+
+.weui-cell_select .weui-cell__bd:after {
+	border-width: 0 2px 2px 0;
+	border-color: #848484;
+	top: 45%;
+	right: 30px;
+}
+
+.lesson-panel {
+	padding: 8px 0;
+}
+
+.weui-media-box__title {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0 15px;
+	border-left: 5px solid #0E7ABD;
+}
+
+.lesson-container {
+	padding: 5px 20px 10px 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.lesson-panel {
+	border-bottom: 2px solid #F5F5F4;
+}
+
+.lesson-panel:last-child {
+	border-bottom: 0;
+}
+
+.teacher span {
+	display: inline-block;
+}
+
+.teacher .teacher-icon {
+	width: 20px;
+	height: 22px;
+}
+
+.teacher .teacher-icon img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.teacher .teacher-name {
+	color: #5E5E5E;
+	font-size: 14px;
+}
+
+.weui-media-box {
+	padding: 0;
+	padding-top: 10px;
+}
+
+.weui-media-box_appmsg .weui-media-box__hd {
+	width: 50%;
+	height: 96px;
+	line-height: 28px;
+	text-align: left;
+	font-size: 14px;
+	margin-right: 1em;
+	position: relative;
+}
+
+.weui-media-box_appmsg .weui-media-box__hd:last-child {
+	margin-right: 0;
+}
+
+.isImportant {
+	width: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.isImportant img {
+	width: 100%;
+}
+
+.weui-media-box_appmsg .weui-media-box__hd img {
+	height: 100%;
+}
+
+.weui-media-box:before {
+	border-top: 0;
+}
+
+.weui-btn-area {
+	margin: .3em;
+}
+
+.lesson-container .weui-btn_default {
+	background-color: #1479BF;
+	color: #FFFFFF;
+}
+
+.lesson-container .weui-btn {
+	font-size: 15px;
+	width: 60%;
+	line-height: 2.1;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.lesson-container p span {
+	display: inline-block;
+	font-size: 14px;
+	color: #5E5E5E;
+}
+
+.lesson-container p .lesson-icon {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 2px;
+	background-size: 16px !important;
+}
+
+.lesson-container p .lesson-name-icon {
+	background: #FFFFFF url(../img/lesson.png) no-repeat;
+	background-size: 20px !important;
+	background-position-x: -4px;
+}
+
+.lesson-container p .lesson-time-icon {
+	background: #FFFFFF url(../img/time.png) no-repeat;
+}
+
+.lesson-container p .lesson-location-icon {
+	background: #FFFFFF url(../img/location.png) no-repeat;
+}
+
+.yh-leave-reason p .lesson-icon {
+	width: 14px;
+	height: 14px;
+	position: relative;
+	top: 2px;
+	background-size: 14px !important;
+}
+.yh-leave-reason p .lesson-leave-icon {
+	display: inline-block;
+	background: #FFFFFF url(../img/leave.png) no-repeat;
+}
+.yh-leave-reason p .showReason {
+	display: inline-block;
+	background: #FFFFFF url(../img/down.png) no-repeat;
+}
+
+.yh-page-bd {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.yh-page-bd .weui-btn_default {
+	background-color: #1479BF;
+	color: #FFFFFF;
+	border-radius: 0;
+}
+
+.weui-btn_default:not(.weui-btn_disabled):visited{
+	color: #FFFFFF;
+}
+
+/*弹出层*/
+.weui-dialog{
+	text-align: left;
+	border-radius: 6px;
+}
+.weui-dialog__hd-title{
+	padding: .4em 1em;
+	color: #454646;
+	background-color: #EFEAEA;
+}
+.weui-dialog__title{
+	font-size: 16px;
+}
+.weui-dialog__hd-content{
+	padding: 0 .4em;
+	background-color: #FFFCFC;
+}
+.lessonTypeRadio{
+	padding: .6em;
+}
+.lessonTypeRadio .weui-cells:before{
+	border: 0;
+}
+.lessonTypeRadio .weui-cells:after{
+	border: 0;
+}
+.lessonTypeRadio .weui-cell:before{
+	border: 0;
+}
+.lessonTypeRadio .weui-cells{
+	margin-top: 0;
+	background-color: inherit;
+}
+.lessonTypeRadio .weui-check__label{
+	float: left;
+	padding: 0;
+}
+.lessonTypeRadio .weui-icon-checked{
+	width: 35px;
+}
+.lessonTypeRadio .weui-cell__bd{
+	font-size: 14px;
+	color: #3E4040;
+}
+.lessonTypeContent{
+	border-top: 1px solid #ECEBEB;
+	border-left: 1px solid #ECEBEB;
+	border-right: 1px solid #ECEBEB;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #FFFFFF;
+	padding: 0 0 .6em;
+}
+.lessonTypeContent .weui-cells:after, .lessonTypeContent .weui-cells:before{
+	border: 0;
+}
+.lessonTypeContent .weui-cell{
+	padding: 0 15px;
+}
+.lessonTypeContent .weui-cells__title{
+	font-size: 15px;
+	color: #454646;
+	margin-top: 0.4em;
+}
+.lessonTypeContent .weui-cell__bd{
+	border: 1px solid #989393;
+	font-size: 14px;
+	color: #A9A9A9;
+}
+.lessonTypeContent .weui-input{
+	height: 2em;
+	line-height: 2em;
+}
+.lessonTypeContent .weui-cell_select{
+	padding: 0 !important;
+}
+.lessonTypeContent .weui-select{
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	font-size: 14px;
+	height: 2em;
+	line-height: 2em;
+	color: #A9A9A9;
+}
+.leaderSelect .weui-cells{
+	margin-top: 0;
+	width: 100%;
+}
+.leaderSelect .weui-cell{
+	padding: 0;
+}
+.leaderSelect .yh-cell-4{
+	width: 33.3333333333%;
+	float: left;
+}
+.leaderSelect .weui-icon-checked{
+	width: 23px;
+}
+.leaderSelect .weui-icon-checked:before{
+	color: #F09E00 !important;
+}
+.leaderSelect .weui-cell__bd{
+	border: 0;
+}
+.leaderSelect .weui-cell:before{
+	border: 0;
+}
+#enrollDialog2 .lessonTypeContent, #enrollDialog6 .lessonTypeContent{
+	margin-top: 9px;
+}
+.tip{
+	font-size: 12px;
+	color: #EE7474;
+	padding: .4em 1em;
+}
+.confirm{
+	color: #767777;
+	font-size: 15px;
+	padding: 1.6em;
+}
+.showLessonWay{
+	position: absolute;
+	top: 4px;
+	right: 6px;
+}
+.showIcon{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/slide_up.png) no-repeat;
+	background-size: 100%;
+	background-position-y: 6px;
+}
+
+.weui-dialog__ft{
+	font-size: 16px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #FFFCFC;
+}
+
+
+.weui-cell_access .weui-cell__ft{
+	font-size: 14px;
+}
+.notfinish{
+	color: #00C332;
+}

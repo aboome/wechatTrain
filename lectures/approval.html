@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>审批通知</title>
+		<link rel="stylesheet" href="../third/weui.min.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/lesson.css" />
+		<style>
+			.lesson-nav {
+				width: 100%;
+				height: 45px;
+				text-align: center;
+				position: fixed;
+				top: 0;
+				background-color: #F5F5F5;
+				z-index: 99;
+			}
+			
+			.lesson-nav .lesson-nav-a {
+				display: inline-block;
+				font-size: 15px;
+				color: #222222;
+				height: 43px;
+				line-height: 45px;
+				width: 60px;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			.nav-width{
+				display: inline-block;
+				float: left;
+				width: 33.33333333%;
+			}
+			.lesson-nav-on {
+				color: #2374BA !important;
+				border-bottom: 2px solid #2374BA !important;
+			}
+			.notice{
+				position: absolute;
+				top: 45px;
+				padding: 0 10px;
+			}
+			.weui-media-box_appmsg .weui-media-box__hd{
+				width: 45%;
+			}
+			.weui-media-box_appmsg .notice-content{
+				height: 96px;
+			}
+			.notice .weui-media-box__title{
+				border-left: 0;
+				font-weight: 100;
+				padding: 0;
+				height: 70px;
+			}
+			.notice .weui-media-box__desc{
+				height: 26px;
+				line-height: 26px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="lesson-nav">
+			<div class="nav-width">
+				<a href="javascript:;" class="lesson-nav-a lesson-nav-on" id="abstract">培训通知</a>
+			</div>
+			<div class="nav-width">
+				<a href="javascript:;" class="lesson-nav-a" id="outline">培训计划</a>
+			</div>
+			<div class="nav-width">
+				<a href="javascript:;" class="lesson-nav-a" id="evaluate">操作手册</a>
+			</div>
+		</div>
+		
+		<article class="notice" id="abstract-con">
+			<div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg approve">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="../img/1.png" alt="">
+                    </div>
+                    <div class="weui-media-box__bd notice-content">
+                        <h4 class="weui-media-box__title">标题一</h4>
+                        <p class="weui-media-box__desc">2017-01-12</p>
+                    </div>
+                </a>
+                
+            </div>
+		</article>
+		
+		<article class="notice none" id="outline-con">
+			<div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg approve">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="../img/1.png" alt="">
+                    </div>
+                    <div class="weui-media-box__bd notice-content">
+                        <h4 class="weui-media-box__title">标题二</h4>
+                        <p class="weui-media-box__desc">2017-01-12</p>
+                    </div>
+                </a>
+                
+            </div>
+		</article>
+		
+		<article class="notice none" id="evaluate-con">
+			<div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg approve">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="../img/1.png" alt="">
+                    </div>
+                    <div class="weui-media-box__bd notice-content">
+                        <h4 class="weui-media-box__title">标题三</h4>
+                        <p class="weui-media-box__desc">2017-01-12</p>
+                    </div>
+                </a>
+                
+            </div>
+		</article>
+
+	</body>
+	<script type="text/javascript" src="../third/zepto.min.js"></script>
+	<script type="text/javascript" src="../third/weui.min.js"></script>
+	<script type="text/javascript" src="../third/event.js"></script>
+	<script type="text/javascript" src="../third/touch.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script>
+		$(function(){
+			$('.lesson-nav-a').on('tap', function(){
+				$(this).addClass('lesson-nav-on').parents('.nav-width').siblings('.nav-width')
+					.find('.lesson-nav-on').removeClass('lesson-nav-on');
+				
+				var id = $(this).attr('id');
+				$('#' + id + '-con').removeClass('none').siblings('.notice').addClass('none');
+			});
+			
+			$('.approve').on('tap', function(){
+				window.location.href = 'approvaldetails.html';
+			});
+			
+		});
+	</script>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>我的报名</title>
+		<link rel="stylesheet" href="../third/weui.min.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/lesson.css" />
+	</head>
+	<style>
+		.yh-article {top: 0;padding-top: 36px;padding-bottom: 0;}
+		.yhNavbar {top: 0 !important;}
+		.weui-media-box_appmsg .weui-media-box__hd {line-height: 21px;}
+		.lesson-container p {color: #5E5E5E;}
+		.lesson-container p span {font-size: 12px;}
+		.lesson-container p .lesson-location-icon {background-size: 15px !important;left: -1px;}
+		.lesson-container p .lesson-time-icon {background-size: 14px !important;}		
+		.lesson-container p .lesson-icon {width: 14px;height: 14px;}		
+		.weui-btn-area {background-color: #F2F3F5;border-radius: 4px;}
+		.lesson-container .weui-btn {font-size: 13px;line-height: 2;}
+		.lesson-container .yh-btn-main {width: 40%;}
+		.lesson-container .yh-btn-minor {width: 30%;border-radius: 0;background-color: inherit;color: #1079C4;border-radius: 4px;}
+		.lesson-container .yh-btn-minor:last-child {border-left: 1px solid #E6E6E6;}		
+		.weui-tab__panel {padding-bottom: 0;}		
+		.nopass-btn1 {background-color: #B2B2B2 !important;color: #F9F3F3 !important;}		
+		.nopass-btn2 {color: #B2B2B2 !important;}	
+		.lessonTypeContent{padding: 0;}
+		.lessonTypeContent .bordertop{
+			padding: 6px;
+			border-top: 1px solid #ECEBEB;
+		}	
+		@media screen and (max-width: 320px) {.lesson-container {padding: 5px 12px;} .weui-media-box_appmsg .weui-media-box__hd {margin-right: .3em;} .weui-btn-area {margin: .3em 0;} .yh-nav .weui-btn_mini {margin-top: 5px;padding-left: 2.6%;padding-right: 2.6%;}}
+		@media screen and (min-width: 321px) and (max-width: 360px) {.yh-nav .weui-btn_mini {margin-top: 5px;padding-left: 3.5%;padding-right: 3.5%;}}
+		@media screen and (min-width: 361px) and (max-width: 375px) {.yh-nav .weui-btn_mini {margin-top: 5px;padding-left: 3.75%;padding-right: 3.75%;}}	
+		@media screen and (min-width: 376px) and (max-width: 414px) {.yh-nav .weui-btn_mini {margin-top: 5px;padding-left: 4.35%;padding-right: 4.35%;}}
+		@media screen and (min-width: 415px) {.yh-nav .weui-btn_mini {margin-top: 5px;padding-left: 4.65%;padding-right: 4.65%;}}
+	</style>
+
+	<body>
+		<article class="weui-tab__panel yh-article">
+			<div id="yh-navbar" class="yhNavbar">
+				<div class="weui-navbar yh-nav">
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar yh-navbar-on">全部</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">报名通过</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">审核中</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">报名失败</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">已结束</a>
+				</div>
+			</div>
+			<div class="weui-tab__panel">
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">数据之旅</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="../img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="../img/2.png" />
+									<div class="isImportant">
+										<img src="../img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p>状态：<span class="registStatus pass">报名通过</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-main" id="">点击上课</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor exercise" id="">做练习</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor leave" id="">请假</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">数据之旅</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="../img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="../img/2.png" />
+									<div class="isImportant">
+										<img src="../img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p>状态：<span class="registStatus nopass">报名失败</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-main nopass-btn nopass-btn1" id="">点击上课</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor nopass-btn nopass-btn2" id="">做练习</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor nopass-btn nopass-btn2" id="">请假</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">数据之旅</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="../img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="../img/2.png" />
+									<div class="isImportant">
+										<img src="../img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p>状态：<span class="registStatus nopass">报名失败</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-main nopass-btn nopass-btn1" id="">点击上课</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor nopass-btn nopass-btn2" id="">做练习</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor nopass-btn nopass-btn2" id="">请假</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">数据之旅</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="../img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="../img/2.png" />
+									<div class="isImportant">
+										<img src="../img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p>状态：<span class="registStatus pass">报名通过</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-main" id="">点击上课</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor" id="">做练习</a>
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn yh-btn-minor" id="">请假</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+		</article>
+		<!--<footer style="position: fixed;height: 40px;bottom:0;background: yellow;width: 100%">
+			这里没有的话可以不用写
+		</footer>-->
+
+		<div class="js_dialog" id="leaveLayer" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeContent">
+						<div class="weui-cells__title">审批领导</div>
+						<div class="weui-cells leaderSelect">
+							<div class="weui-cell">
+								<div class="weui-cells weui-cells_radio yh-cells">
+									<label class="weui-cell weui-check__label yh-cell-4" for="name11">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name11" checked="checked">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name21">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name21">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲</p>
+							            </div>
+						            </label>
+						            <label class="weui-cell weui-check__label yh-cell-4" for="name31">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name31">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元12</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name41">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name41">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲32</p>
+							            </div>
+						            </label>
+								</div>
+							</div>
+							<div class="weui-cell__bd bordertop">
+			                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+			                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+			                </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../third/zepto.min.js"></script>
+	<script type="text/javascript" src="../third/weui.min.js"></script>
+	<script type="text/javascript" src="../third/event.js"></script>
+	<script type="text/javascript" src="../third/touch.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*按键反馈色*/
+			$('.yh-btn-minor').on('touchstart', function() {
+				$(this).css({
+					'background-color': '#E6E6E6',
+					'color': '#1079C4'
+				});
+			});
+			$('.yh-btn-minor').on('touchend', function() {
+				$(this).css('background-color', '#F2F3F5');
+			});
+
+			/*禁用按钮*/
+			$('.nopass-btn').attr('disabled', true).removeAttr('href');
+			$('.nopass-btn').on('touchstart', function() {
+				$(this).css({
+					'background-color': '#F2F3F5'
+				});
+			});
+			
+			$('.exercise').on('tap', function(){
+				window.location.href = 'exercise.html';
+			});
+			
+			$('.leave').on('tap', function() {
+				$('#leaveLayer').fadeIn(200);
+			});
+			
+		});
+	</script>
+
+</html>

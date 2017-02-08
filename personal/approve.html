@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>我的审批</title>
+		<link rel="stylesheet" href="../third/weui.min.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/lesson.css" />
+	</head>
+	<style>
+		.yh-article {top: 0;padding-top: 36px;padding-bottom: 0;}
+		.yhNavbar {top: 0 !important;}
+		.weui-tab__panel{padding-bottom: 0;}
+		.yh-nav-1{text-align: center;height: 34px;}
+		.yh-nav-1 .approve-navbar-on{background-color: #228ED9 !important;color: #FFFFFF;}
+		.yh-nav-1 .weui-btn_default{background-color: #B2B3B4;color: #FFFFFF;}
+		.applyPerson{color: #EFB300;}
+		.isAgree{color: #5E5E5E;padding-top: 0;position: absolute;bottom: 5px;right: 10px;}
+		.isAgree .agree, .isAgree .viewPractice{color: #08C631;margin-right: 5px;}
+		.isAgree .disagree{color: #F30015;margin-left: 5px;}
+		.yh-leave-reason{padding: 0 10px 5px 10px;}
+		.yh-leave-reason p{font-size: 12px;color: #5E5E5E;word-wrap: break-word;}
+		.showReason{float: right;}
+		.leaveReason{padding: 5px;border-top: 1px solid #F1EDEF;display: none;}
+		
+		.yh-cell-10{width: 73% !important;}
+		.yh-cell-2{width: 27% !important;}
+		.weui-media-box__title{padding: 0 8px;border-left: 5px solid #EFB300;font-size: 14px;}
+		.lesson-container{padding: 5px 10px;position: relative;}
+		.weui-media-box_appmsg .weui-media-box__hd{font-size: 12px;height: auto;margin-right: 0.5em;display:block;width:100%;
+					overflow: hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:break-word;word-break:break-all;}
+		.lesson-container p{height: 28px;color: #5E5E5E;}
+		.lesson-container p .lesson-icon{width: 14px;height: 14px;}
+		.lesson-container p .lesson-location-icon{background-size:14px !important;}
+		.lesson-container p span{font-size: 12px;}
+	</style>
+
+	<body>
+		<article class="weui-tab__panel yh-article">
+			<div id="yh-navbar" class="yhNavbar">
+				<div class="weui-navbar yh-nav">
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar yh-navbar-on" id="enroll">报名审批</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar" id="leave">请假审批</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar" id="practice">课后练习</a>
+				</div>
+			</div>
+			
+			<!--报名审批-->
+			<div class="weui-tab__panel lesson-content" id="enroll-content">
+				<div class="yh-nav-1">
+					<a href="javascript:;" data-id="untreated" class="weui-btn weui-btn_mini weui-btn_default yh-btn-left yh-navbar approve-navbar-on">未处理</a>
+					<a href="javascript:;" data-id="processed" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">已处理</a>
+				</div>
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+			
+			<!--请假审批-->
+			<div class="weui-tab__panel lesson-content none" id="leave-content">
+				<div class="yh-nav-1">
+					<a href="javascript:;" data-id="untreated" class="weui-btn weui-btn_mini weui-btn_default yh-btn-left yh-navbar approve-navbar-on">未处理</a>
+					<a href="javascript:;" data-id="processed" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">已处理</a>
+				</div>
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹111</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+						<div class="yh-leave-reason">
+							<p><span class="lesson-icon lesson-leave-icon"></span> 请假原因：<span class="lesson-location">显示请假事由</span><a href="javascript:;" class="lesson-icon showReason" data-satus="0"></a></p>
+							<div class="leaveReason">
+								<p>fesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsgfesfgsg</p>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹111</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+						<div class="yh-leave-reason">
+							<p><span class="lesson-icon lesson-leave-icon"></span> 请假原因：<span class="lesson-location">显示请假事由</span><a href="javascript:;" class="lesson-icon showReason" data-satus="0"></a></p>
+							<div class="leaveReason">
+								<p>fesfgsg</p>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹111</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+						<div class="yh-leave-reason">
+							<p><span class="lesson-icon lesson-leave-icon"></span> 请假原因：<span class="lesson-location">显示请假事由</span><a href="javascript:;" class="lesson-icon showReason" data-satus="0"></a></p>
+							<div class="leaveReason">
+								<p>fesfgsg</p>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹111</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+						<div class="yh-leave-reason">
+							<p><span class="lesson-icon lesson-leave-icon"></span> 请假原因：<span class="lesson-location">显示请假事由</span><a href="javascript:;" class="lesson-icon showReason" data-satus="0"></a></p>
+							<div class="leaveReason">
+								<p>fesfgsg</p>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹111</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="agree">同意</a> |
+									<a href="javascript:;" class="disagree">拒绝</a>
+								</div>
+							</div>
+						</div>
+						<div class="yh-leave-reason">
+							<p><span class="lesson-icon lesson-leave-icon"></span> 请假原因：<span class="lesson-location">显示请假事由</span><a href="javascript:;" class="lesson-icon showReason" data-satus="0"></a></p>
+							<div class="leaveReason">
+								<p>fesfgsg</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+			
+			<!--课后练习-->
+			<div class="weui-tab__panel lesson-content none" id="practice-content">
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title"><span class="applyPerson">吴雪莹222</span>发来了课程报名申请</h4>
+						<div class="lesson-container">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-name-icon"></span> 课程标题：<span class="lesson-time">绩效管理——目标设定</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> 课程类型：<span class="lesson-location">线上直播</span></p>
+								</div>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg isAgree">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="viewPractice">查看练习</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+		</article>
+		
+		<!--<footer style="position: fixed;height: 40px;bottom:0;background: yellow;width: 100%">
+			这里没有的话可以不用写
+		</footer>-->
+	</body>
+	<script type="text/javascript" src="../third/zepto.min.js"></script>
+	<script type="text/javascript" src="../third/weui.min.js"></script>
+	<script type="text/javascript" src="../third/event.js"></script>
+	<script type="text/javascript" src="../third/touch.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			/*按钮颜色反馈*/
+			$('.yh-btn').on('touchstart', function() {
+				$(this).css({
+					'background-color': '#10629B',
+					'color': '#fff'
+				});
+			});
+			$('.yh-btn').on('touchend', function() {
+				$(this).css('background-color', '#1479BF');
+			});
+			
+			$('.yh-navbar').on('tap', function() {
+				$(this).addClass('approve-navbar-on').siblings('.approve-navbar-on').removeClass('approve-navbar-on');
+			
+			});
+			
+			/*切换nav*/
+			$('#enroll').on('tap', function(){ toggleContent(this); });
+			$('#leave').on('tap', function(){ toggleContent(this); });
+			$('#practice').on('tap', function(){ toggleContent(this); });
+			
+			
+			$('.showReason').on('tap', function(){
+				var status = $(this).attr('data-status');
+				if(status == '0'){
+					$(this).parents('p').siblings('.leaveReason').fadeIn(300);/*css('display', 'block');*/
+					$('.showReason').attr('data-status', '1');
+					$(this).css('background-image', 'url(../img/up.png)');
+				} else {
+					$(this).parents('p').siblings('.leaveReason').fadeOut(100);/*css('display', 'none');*/
+					$('.showReason').attr('data-status', '0');
+					$(this).css('background-image', 'url(../img/down.png)');
+				}
+				
+			});
+		});
+	</script>
+
+</html>

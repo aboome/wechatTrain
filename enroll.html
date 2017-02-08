@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>报名</title>
+		<link rel="stylesheet" href="third/weui.min.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="css/lesson.css" />
+	</head>
+	<style>
+		.yh-article {
+			padding-bottom: 124px;
+		}
+		
+		.weui-search-bar {
+			padding: 6px 10px;
+		}
+		
+		.weui-search-bar__cancel-btn {
+			display: none;
+			color: #09BB07;
+			margin-left: 10px;
+		}
+		
+		.weui-cells {
+			margin-top: 0 !important;
+			background-color: inherit;
+		}
+		
+		.weui-cells:before,
+		.weui-cells:after {
+			border: 0;
+		}
+		
+		.weui-cell:before {
+			border: 0;
+		}
+		
+		.lesson-wrap {
+			padding: 10px 8px;
+			border-bottom: 1px solid #F4F4F4;
+		}
+		/*.lesson-wrap:last-child{
+			border-bottom: 0;
+		}*/
+		
+		.lessonInfo {
+			padding: 0;
+		}
+		
+		.lesson-title {
+			color: #191919;
+			font-size: 16px;
+		}
+		
+		.lesson-p {
+			font-size: 13px;
+			color: #8A8A8A;
+		}
+		
+		.lesson-all-checked {
+			bottom: -38px;
+			background-color: #E6E5E5;
+		}
+		
+		.lesson-all-checked .weui-check__label {
+			padding: 10px 8px;
+			width: 80px;
+		}
+		
+		.weui-btn-area {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+		.weui-btn-area .weui-btn_default {
+			border-radius: 0;
+			background-color: #2A81C2;
+			font-size: 17px;
+			padding: 2px 20px;
+		}
+		.lesson-type{
+			width: 100%;
+			height: 235px;
+			background-color: #F4F4F4;
+			position: absolute;
+		}
+		.lesson-type .lessonTypeRadio{
+			padding: .43em;
+		}
+		.lesson-type .lessonWayContent{
+			height: 140px;
+			overflow-y: scroll;
+		}
+		.lesson-type .lessonWayContent .weui-cells__title{
+			color: #7B7B7B;
+			margin-top: 0;
+		}
+		.lesson-type .lessonWayContent .leaderSelect{
+			padding: 0 15px;
+			color: #A9A9A9;
+		}
+		.lesson-type .lessonWayContent .weui-cell__bd{
+			font-size: 12px;
+		}
+		.lesson-type .weui-input{
+			height: 26px;
+			border: 1px solid #989393;
+			color: #A9A9A9;
+		}
+		.lesson-type .weui-select{
+			height: 26px;
+			border: 1px solid #989393;
+			color: #A9A9A9;
+			padding: 0;
+		}
+		.lessonTypeRadio .weui-cells{
+			margin-right: 50px;
+		}
+	</style>
+
+	<body>
+		<header id="yh-header">
+			<div class="weui-search-bar" id="searchBar">
+				<form class="weui-search-bar__form">
+					<div class="weui-search-bar__box">
+						<i class="weui-icon-search"></i>
+						<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索课程" required="">
+						<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+					</div>
+					<label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+	                    <i class="weui-icon-search"></i>
+	                    <span>搜索课程</span>
+	                </label>
+				</form>
+				<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+			</div>
+		</header>
+		<article class="weui-tab__panel yh-article">
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson1">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson1">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson2">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson2">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson3">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson3">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson4">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson4">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson5">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson5">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson6">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson6">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson7">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson7">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label lesson-wrap" for="lesson8">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="lesson8">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <div class="weui-cell lessonInfo">
+			                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+			                    <img src="img/oa.png" style="width: 60px;display: block">
+			                </div>
+			                <div class="weui-cell__bd">
+			                    <p class="lesson-title">项目管理</p>
+			                    <p class="lesson-p">蔡碧元</p>
+			                    <p class="lesson-p">2017-01-10 21：00</p>
+			                </div>
+			            </div>
+	                </div>
+	            </label>
+			</div>
+
+		</article>
+		<footer style="position: fixed;height: 84px;bottom:0;background: #F4F4F4;width: 100%">
+			<div class="lesson-type">
+				<div class="lessonTypeRadio">
+					<div class="weui-cells weui-cells_radio yh-cells">
+						<label class="weui-cell weui-check__label yh-cell-6" for="online">
+				            <div class="weui-cell__ft">
+				                <input type="radio" class="weui-check lessonWay" name="lessonWay" id="online" data-id="online">
+				                <span class="weui-icon-checked"></span>
+				            </div>
+				            <div class="weui-cell__bd">
+				                <p>线上参加</p>
+				            </div>
+				        </label>
+						<label class="weui-cell weui-check__label yh-cell-6" for="line">
+					        <div class="weui-cell__ft">
+					            <input type="radio" class="weui-check lessonWay" name="lessonWay" id="line" data-id="line">
+					            <span class="weui-icon-checked"></span>
+					        </div>
+					        <div class="weui-cell__bd">
+					            <p>线下参加</p>
+					        </div>
+			
+				        </label>
+					</div>
+					<div class="showLessonWay">
+						<a href="javascript:;" class="showIcon" data-value="0"></a>
+					</div>
+				</div>
+				<div class="lessonWayContent">
+					<div class="lineShow">
+						<div class="weui-cells__title">出发地点</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<input class="weui-input" id="startArea" type="text" readonly="" name="input_area" placeholder="请选择出发城市" />
+									<input id="startAreaValue" type="hidden" value="20,234,504" />
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出行工具</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<select class="weui-select">
+											<option selected="" value="">请选择出行工具</option>
+											<option value="2">自行车</option>
+											<option value="3">地铁</option>
+											<option value="3">汽车</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出发时间</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<input class="weui-input" type="datetime-local" value="" placeholder="请选择出发时间">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="weui-cells__title">请选择审批领导</div>
+					<div class="weui-cells leaderSelect">
+						<div class="weui-cell">
+							<div class="weui-cells weui-cells_radio yh-cells">
+								<label class="weui-cell weui-check__label yh-cell-4" for="name1">
+						            <div class="weui-cell__ft">
+						                <input type="radio" class="weui-check" name="leader" id="name1" checked="checked">
+						                <span class="weui-icon-checked"></span>
+						            </div>
+						            <div class="weui-cell__bd">
+						                <p>蔡碧元</p>
+						            </div>
+						        </label>
+								<label class="weui-cell weui-check__label yh-cell-4" for="name2">
+						            <div class="weui-cell__ft">
+						                <input type="radio" name="leader" class="weui-check" id="name2">
+						                <span class="weui-icon-checked"></span>
+						            </div>
+						            <div class="weui-cell__bd">
+						                <p>殷冲</p>
+						            </div>
+					            </label>
+					            <label class="weui-cell weui-check__label yh-cell-4" for="name3">
+					                <div class="weui-cell__ft">
+					                    <input type="radio" class="weui-check" name="leader" id="name3">
+					                    <span class="weui-icon-checked"></span>
+					                </div>
+					                <div class="weui-cell__bd">
+					                    <p>蔡碧元12</p>
+					                </div>
+					            </label>
+						            
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_checkbox lesson-all-checked">
+				<label class="weui-cell weui-check__label" for="all-checked">
+	                <div class="weui-cell__hd">
+	                    <input type="checkbox" class="weui-check" name="lesson" id="all-checked">
+	                    <i class="weui-icon-checked"></i>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <p>全选</p>
+	                </div>
+	            </label>
+				<div class="weui-btn-area clearfix">
+					<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" id="enroll">报名<span class="total">( 0 )</span></a>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	<script type="text/javascript" src="third/zepto.min.js"></script>
+	<script type="text/javascript" src="third/weui.min.js"></script>
+	<script type="text/javascript" src="third/event.js"></script>
+	<script type="text/javascript" src="third/touch.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var $searchBar = $('#searchBar'),
+				$searchResult = $('#searchResult'),
+				$searchText = $('#searchText'),
+				$searchInput = $('#searchInput'),
+				$searchClear = $('#searchClear'),
+				$searchCancel = $('#searchCancel');
+
+			function hideSearchResult() {
+				$searchResult.hide();
+				$searchInput.val('');
+			}
+
+			function cancelSearch() {
+				hideSearchResult();
+				$searchBar.removeClass('weui-search-bar_focusing');
+				$searchText.show();
+			}
+
+			$searchText.on('click', function() {
+				$searchBar.addClass('weui-search-bar_focusing');
+				$searchInput.focus();
+			});
+			$searchInput
+				.on('blur', function() {
+					if(!this.value.length) cancelSearch();
+				})
+				.on('input', function() {
+					if(this.value.length) {
+						$searchResult.show();
+					} else {
+						$searchResult.hide();
+					}
+				});
+			$searchClear.on('click', function() {
+				hideSearchResult();
+				$searchInput.focus();
+			});
+			$searchCancel.on('click', function() {
+				cancelSearch();
+				$searchInput.blur();
+			});
+			
+			$('.showIcon').on('tap', function(){
+				if( !$('.lessonWay').is('checked') ){
+					$('#online').attr('checked', 'checked');
+					$('.lineShow').hide();
+				}
+				
+				var data = $(this).attr('data-value');
+				if(data == '0'){
+					$(this).attr('data-value', '1').css('background-image', 'url(img/slide_down.png)');
+					$('.lesson-type').css('top', '-150px');
+				} else if(data == '1') {
+					$(this).attr('data-value', '0').css('background-image', 'url(img/slide_up.png)');
+					$('.lesson-type').css('top', '0');
+				}
+				
+				if( $('#online').attr('checked') == 'checked' ){
+					$('.lineShow').hide();
+				} else {
+					$('.lineShow').show();
+				}
+			});
+			
+			$('.lessonWay').on('change', function() {
+				$(this).attr('data-value', '1').css('background-image', 'url(img/slide_down.png)');
+				$('.lesson-type').css('top', '-150px');
+				
+				$('.weui-check').removeAttr('checked');
+				$(this).attr('checked', true);
+				
+				if($(this).attr('data-id') == 'online') {
+					$('.lineShow').hide();
+				} else if($(this).attr('data-id') == 'line') {
+					$('.lineShow').show();
+				}
+			});
+			
+			$('#all-checked').on('change', function(){
+				
+				if($(this).attr('checked')=='checked'){
+					$(this).removeAttr('checked');
+					$('input[name="lesson"]').prop("checked", false);
+				}else{
+					$(this).attr('checked', 'checked');
+					$('input[name="lesson"]').prop("checked", true);
+				}
+					
+				
+			});
+			
+			
+			
+		});
+	</script>
+
+</html>

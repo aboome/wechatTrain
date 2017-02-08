@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>必修课</title>
+		<link rel="stylesheet" href="third/weui.min.css" />
+		<link rel="stylesheet" href="third/LArea.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="css/lesson.css" />
+	</head>
+
+	<body>
+		<header id="yh-header">
+			<div class="weui-navbar yh-nav-1">
+				<a href="javascript:;" data-id="profession" class="weui-btn weui-btn_mini weui-btn_default yh-btn-left yh-navbar yh-navbar-on">专业类</a>
+				<a href="javascript:;" data-id="common" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">通用类</a>
+
+				<a href="javascript:;" class="weui-icon-search yh-search" id="searchBtn"></a>
+				<div class="weui-search-bar yh-search-control none">
+					<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="请输入关键字" required="">
+					<a href="javascript:;" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+				</div>
+			</div>
+		</header>
+		<article class="weui-tab__panel yh-article" id="profession-content">
+			<!--<div id="yh-navbar">
+				<div class="weui-navbar yh-nav">
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar yh-navbar-on">销售</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">营销其他</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">医学科学</a>
+					<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default yh-navbar">生产</a>
+				</div>
+			</div>-->
+			<div class="weui-tab__panel">
+				<div class="weui-cell weui-cell_select">
+					<div class="weui-cell__bd yh-select">
+						<select class="weui-select" name="train">
+							<option selected="" value="1">请选择课程分类</option>
+							<option value="2">中药销售</option>
+							<option value="3">医疗用品销售</option>
+							<option value="4">西医药品销售</option>
+						</select>
+					</div>
+				</div>
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="000">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="00">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="000">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上直播</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="01">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="000">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="02">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="001">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant none">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="00">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="001">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant none">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上直播</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="01">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="001">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant none">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="02">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg" data-value="001">
+								<div class="weui-media-box__hd">
+									<a href="javascript:;" class="lesson-details">
+										<img class="weui-media-box__thumb" src="img/1.png" />
+										<div class="isImportant none">
+											<img src="img/im.png">
+										</div>
+									</a>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">点播</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" data-type="03">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+			<div class="yh-page-bd" id="yh-btn-bd">
+				<a href="enroll.html" class="weui-btn weui-btn_default yh-btn">一键报名</a>
+			</div>
+		</article>
+
+		<article class="weui-tab__panel yh-article none" id="common-content">
+
+			<div class="weui-tab__panel">
+				<div class="weui-cell weui-cell_select">
+					<div class="weui-cell__bd yh-select">
+						<select class="weui-select" name="train">
+							<option selected="" value="1">请选择合规</option>
+							<option value="2">与医院合作规范</option>
+							<option value="3">与医药公司合作规范</option>
+						</select>
+					</div>
+				</div>
+				<!--课程开始-->
+				<div class="lesson">
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="img/2.png" />
+									<div class="isImportant">
+										<img src="img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" id="enroll1">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">蔡碧元</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="img/2.png" />
+									<div class="isImportant">
+										<img src="img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" id="enroll1">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="img/1.png" />
+									<div class="isImportant">
+										<img src="img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" id="enroll1">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lesson-panel">
+						<h4 class="weui-media-box__title">逻辑思维</h4>
+						<div class="lesson-container">
+							<div class="teacher">
+								<span class="teacher-icon"><img src="img/teacher.png" /></span>
+								<span class="teacher-name">tptraning</span>
+							</div>
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="img/1.png" />
+									<div class="isImportant">
+										<img src="img/im.png">
+									</div>
+								</div>
+								<div class="weui-media-box__hd">
+									<p><span class="lesson-icon lesson-time-icon"></span> <span class="lesson-time">2016-10-12 10:56</span></p>
+									<p><span class="lesson-icon lesson-location-icon"></span> <span class="lesson-location">线上培训/线下培训</span></p>
+									<div class="weui-btn-area clearfix">
+										<a href="javascript:;" class="weui-btn weui-btn_default yh-btn" id="enroll1">马上报名</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--课程结束-->
+			</div>
+			<div class="yh-page-bd" id="yh-btn-bd">
+				<a href="enroll.html" class="weui-btn weui-btn_default yh-btn">一键报名</a>
+			</div>
+		</article>
+		<!--<footer style="position: fixed;height: 40px;bottom:0;background: yellow;width: 100%">
+			这里没有的话可以不用写
+		</footer>-->
+
+		<!--BEGIN dialog1-->
+		<div class="js_dialog" id="enrollDialog1" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeRadio">
+						<div class="weui-cells weui-cells_radio yh-cells">
+							<label class="weui-cell weui-check__label yh-cell-6" for="online">
+				                <div class="weui-cell__ft">
+				                    <input type="radio" class="weui-check lessonWay" name="lessonWay" id="online" data-id="online" checked="checked">
+				                    <span class="weui-icon-checked"></span>
+				                </div>
+				                <div class="weui-cell__bd">
+				                    <p>线上参加</p>
+				                </div>
+				            </label>
+							<label class="weui-cell weui-check__label yh-cell-6" for="line">
+					            <div class="weui-cell__ft">
+					                <input type="radio" class="weui-check lessonWay" name="lessonWay" id="line" data-id="line">
+					                <span class="weui-icon-checked"></span>
+					            </div>
+					            <div class="weui-cell__bd">
+					                <p>线下参加</p>
+					            </div>
+			
+				            </label>
+						</div>
+					</div>
+					<div class="lessonTypeContent">
+						<div class="lineShow">
+							<div class="weui-cells__title">出发地点</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<input class="weui-input" id="startArea" type="text" readonly="" name="input_area" placeholder="请选择出发城市" />
+										<input id="startAreaValue" type="hidden" value="20,234,504" />
+									</div>
+								</div>
+							</div>
+							<div class="weui-cells__title">出行工具</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<div class="weui-cell weui-cell_select">
+											<select class="weui-select">
+												<option selected="" value="">请选择出行工具</option>
+												<option value="2">自行车</option>
+												<option value="3">地铁</option>
+												<option value="3">汽车</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-cells__title">出发时间</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<div class="weui-cell weui-cell_select">
+											<input class="weui-input" type="datetime-local" value="" placeholder="请选择出发时间">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="weui-cells__title">审批领导</div>
+						<div class="weui-cells leaderSelect">
+							<div class="weui-cell">
+								<div class="weui-cells weui-cells_radio yh-cells">
+									<label class="weui-cell weui-check__label yh-cell-4" for="name1">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name1" checked="checked">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name2">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name2">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲</p>
+							            </div>
+						            </label>
+						            <label class="weui-cell weui-check__label yh-cell-4" for="name3">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name3">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元12</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name4">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name4">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲32</p>
+							            </div>
+						            </label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog1-->
+		
+		<!--BEGIN dialog2-->
+		<div class="js_dialog" id="enrollDialog2" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeContent">
+						<div class="weui-cells__title">审批领导</div>
+						<div class="weui-cells leaderSelect">
+							<div class="weui-cell">
+								<div class="weui-cells weui-cells_radio yh-cells">
+									<label class="weui-cell weui-check__label yh-cell-4" for="name11">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name11" checked="checked">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name21">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name21">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲</p>
+							            </div>
+						            </label>
+						            <label class="weui-cell weui-check__label yh-cell-4" for="name31">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name31">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元12</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name41">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name41">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲32</p>
+							            </div>
+						            </label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog2-->
+		
+		<!--BEGIN dialog3-->
+		<div class="js_dialog" id="enrollDialog3" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeContent">
+						<div class="weui-cells__title">出发地点</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<input class="weui-input" id="startArea" type="text" readonly="" name="input_area" placeholder="请选择出发城市" />
+									<input id="startAreaValue" type="hidden" value="20,234,504" />
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出行工具</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<select class="weui-select">
+											<option selected="" value="">请选择出行工具</option>
+											<option value="2">自行车</option>
+											<option value="3">地铁</option>
+											<option value="3">汽车</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出发时间</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<input class="weui-input" type="datetime-local" value="" placeholder="请选择出发时间">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="weui-cells__title">审批领导</div>
+						<div class="weui-cells leaderSelect">
+							<div class="weui-cell">
+								<div class="weui-cells weui-cells_radio yh-cells">
+									<label class="weui-cell weui-check__label yh-cell-4" for="name12">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name122" checked="checked">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name22">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name22">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲</p>
+							            </div>
+						            </label>
+						            <label class="weui-cell weui-check__label yh-cell-4" for="name32">
+						                <div class="weui-cell__ft">
+						                    <input type="radio" class="weui-check" name="leader" id="name32">
+						                    <span class="weui-icon-checked"></span>
+						                </div>
+						                <div class="weui-cell__bd">
+						                    <p>蔡碧元12</p>
+						                </div>
+						            </label>
+									<label class="weui-cell weui-check__label yh-cell-4" for="name42">
+							            <div class="weui-cell__ft">
+							                <input type="radio" name="leader" class="weui-check" id="name42">
+							                <span class="weui-icon-checked"></span>
+							            </div>
+							            <div class="weui-cell__bd">
+							                <p>殷冲32</p>
+							            </div>
+						            </label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog3-->
+		
+		<!--BEGIN dialog4-->
+		<div class="js_dialog" id="enrollDialog4" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeRadio">
+						<div class="weui-cells weui-cells_radio yh-cells">
+							<label class="weui-cell weui-check__label yh-cell-6" for="online-1">
+				                <div class="weui-cell__ft">
+				                    <input type="radio" class="weui-check lessonWay" name="lessonWay-1" id="online-1" data-id="online" checked="checked">
+				                    <span class="weui-icon-checked"></span>
+				                </div>
+				                <div class="weui-cell__bd">
+				                    <p>线上参加</p>
+				                </div>
+				            </label>
+							<label class="weui-cell weui-check__label yh-cell-6" for="line-1">
+					            <div class="weui-cell__ft">
+					                <input type="radio" class="weui-check lessonWay" name="lessonWay-1" id="line-1" data-id="line">
+					                <span class="weui-icon-checked"></span>
+					            </div>
+					            <div class="weui-cell__bd">
+					                <p>线下参加</p>
+					            </div>
+				            </label>
+						</div>
+					</div>
+					<div class="lessonTypeContent">
+						<div class="lineShow">
+							<div class="weui-cells__title">出发地点</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<input class="weui-input" id="startArea" type="text" readonly="" name="input_area" placeholder="请选择出发城市" />
+										<input id="startAreaValue" type="hidden" value="20,234,504" />
+									</div>
+								</div>
+							</div>
+							<div class="weui-cells__title">出行工具</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<div class="weui-cell weui-cell_select">
+											<select class="weui-select">
+												<option selected="" value="">请选择出行工具</option>
+												<option value="2">自行车</option>
+												<option value="3">地铁</option>
+												<option value="3">汽车</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-cells__title">出发时间</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__bd">
+										<div class="weui-cell weui-cell_select">
+											<input class="weui-input" type="datetime-local" value="" placeholder="请选择出发时间">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="tip">报名申请提交后，系统会通知后台管理员审批，确定报名该课程吗？</p>
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog4-->
+		
+		<!--BEGIN dialog5-->
+		<div class="js_dialog" id="enrollDialog5" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<p class="confirm">报名申请提交后，系统会通知后台管理员批准，确定报名该课程吗？</p>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog5-->
+		
+		<!--BEGIN dialog6-->
+		<div class="js_dialog" id="enrollDialog6" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd weui-dialog__hd-title"><strong class="weui-dialog__title">请选择您的上课方式</strong></div>
+				<div class="weui-dialog__hd weui-dialog__hd-content">
+					<div class="lessonTypeContent">
+						<div class="weui-cells__title">出发地点</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<input class="weui-input" id="startArea" type="text" readonly="" name="input_area" placeholder="请选择出发城市" />
+									<input id="startAreaValue" type="hidden" value="20,234,504" />
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出行工具</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<select class="weui-select">
+											<option selected="" value="">请选择出行工具</option>
+											<option value="2">自行车</option>
+											<option value="3">地铁</option>
+											<option value="3">汽车</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weui-cells__title">出发时间</div>
+						<div class="weui-cells">
+							<div class="weui-cell">
+								<div class="weui-cell__bd">
+									<div class="weui-cell weui-cell_select">
+										<input class="weui-input" type="datetime-local" value="" placeholder="请选择出发时间">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<p class="tip">报名申请提交后，系统会通知后台管理员审批，确定报名该课程吗？</p>
+
+					</div>
+				</div>
+
+				<div class="weui-dialog__ft">
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+					<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--END dialog6-->
+		
+
+	</body>
+	<script type="text/javascript" src="third/zepto.min.js"></script>
+	<script type="text/javascript" src="third/weui.min.js"></script>
+	<script type="text/javascript" src="third/event.js"></script>
+	<script type="text/javascript" src="third/touch.js"></script>
+	<script type="text/javascript" src="third/LAreaData1.js"></script>
+	<!--<script type="text/javascript" src="third/LAreaData2.js" ></script>-->
+	<script type="text/javascript" src="third/LArea.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var area1 = new LArea();
+			area1.init({
+				'trigger': '#startArea', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+				'valueTo': '#startAreaValue', //选择完毕后id属性输出到该位置
+				'keys': {
+					id: 'id',
+					name: 'name'
+				}, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+				'type': 1, //数据源类型
+				'data': LAreaData //数据源
+			});
+			area1.value = [0, 0, 0]; //控制初始位置，注意：该方法并不会影响到input的value
+			
+			
+			/*业务*/
+			$('.lessonWay').on('change', function() {
+				$('.weui-check').removeAttr('checked');
+				$(this).attr('checked', true);
+				
+				if($(this).attr('data-id') == 'online') {
+					$('.lineShow').hide();
+				} else if($(this).attr('data-id') == 'line') {
+					$('.lineShow').show();
+				}
+			});
+			
+		});
+	</script>
+
+</html>

@@ -1,0 +1,77 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "microsoft yahei";
+}
+
+.none {
+	display: none;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+#yh-header {
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	z-index: 99
+}
+
+.yh-article {
+	position: fixed;
+	bottom: 40px;
+	width: 100%;
+	overflow-y: auto;
+	top: 40px;
+	padding-top: 0;
+	padding-bottom: 40px
+}
+
+#yh-navbar {
+	position: fixed;
+	top: 40px;
+	width: 100%;
+	height: 36px;
+	color: #fff
+}
+
+#yh-btn-bd {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: gray;
+	text-align: center;
+	height: 46px
+}
+
+.yh-cell-6{
+	width: 50%;
+}
+
+.review{
+	color: #B4B91B !important;
+}
+.ongoing{
+	color: #5CC354 !important;
+}
+.finished{
+	color: #676766 !important;
+}
+.pass{
+	color: #1AD161 !important;
+}
+.nopass{
+	color: #FF686D !important;
+}

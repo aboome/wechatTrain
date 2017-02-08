@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>申请讲课</title>
+		<link rel="stylesheet" href="../third/weui.min.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<link rel="stylesheet" href="../css/lectures/apply.css" />
+	</head>
+
+	<body>
+		<div class="wraper">
+			<div class="weui-cells__title">课程名称</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells__title">课程目的</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<textarea class="weui-textarea" placeholder="最多输入24个字" rows="3"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells__title">课程大纲</div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<textarea class="weui-textarea" rows="4"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells__title">课程形式</div>
+			<div class="weui-cells weui-cells_radio yh-cells">
+				<label class="weui-cell weui-check__label yh-cell-6" for="online">
+	                <div class="weui-cell__ft">
+	                    <input type="radio" class="weui-check" name="lessonType" id="online" checked="checked">
+	                    <span class="weui-icon-checked"></span>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <p>线上课程</p>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label yh-cell-6" for="line">
+		            <div class="weui-cell__ft">
+		                <input type="radio" name="lessonType" class="weui-check" id="line">
+		                <span class="weui-icon-checked"></span>
+		            </div>
+		            		            <div class="weui-cell__bd">
+		                <p>线下课程</p>
+		            </div>
+
+	            </label>
+				<label class="weui-cell weui-check__label yh-cell-6" for="onlineAndLine">
+	            	<div class="weui-cell__ft">
+	                    <input type="radio" class="weui-check" name="lessonType" id="onlineAndLine">
+	                    <span class="weui-icon-checked"></span>
+	                </div>
+	                <div class="weui-cell__bd">
+	                    <p>线上+线下课程</p>
+	                </div>
+	            </label>
+				<label class="weui-cell weui-check__label yh-cell-6" for="requests">
+		            <div class="weui-cell__ft">
+		                <input type="radio" name="lessonType" class="weui-check" id="requests">
+		                <span class="weui-icon-checked"></span>
+		            </div>
+		            <div class="weui-cell__bd">
+		                <p>点播课程</p>
+		            </div>
+	            </label>
+			</div>
+
+			<div id="lessonTime">
+				<div class="weui-cells__title">所需时长（分钟）</div>
+				<div class="weui-cells">
+					<div class="weui-cell">
+						<div class="weui-cell__bd">
+							<input class="weui-input" type="number">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="lessonRequests" class="none">
+				<div class="weui-cells__title">课程类型</div>
+				<div class="weui-cells weui-cells_checkbox yh-cells">
+					<label class="weui-cell weui-check__label yh-cell-4" for="image">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" class="weui-check" name="lessonTypeChckbox" id="image" checked="checked">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>图文</p>
+		                </div>
+		            </label>
+					<label class="weui-cell weui-check__label yh-cell-4" for="voice">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="lessonTypeChckbox" class="weui-check" id="voice">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>音频</p>
+		                </div>
+		            </label>
+					<label class="weui-cell weui-check__label yh-cell-4" for="vedio">
+		                <div class="weui-cell__hd">
+		                    <input type="checkbox" name="lessonTypeChckbox" class="weui-check" id="vedio">
+		                    <i class="weui-icon-checked"></i>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <p>视频</p>
+		                </div>
+		            </label>
+				</div>
+			</div>
+			<div class="yh-page-bd" id="yh-btn-bd">
+				<a href="javascript:;" class="weui-btn weui-btn_default yh-btn">提交请求</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../third/zepto.min.js"></script>
+	<script type="text/javascript" src="../third/weui.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script>
+		$(function() {
+			$('input[name="lessonType"]').on('change', function() {
+				$('.weui-check').removeAttr('checked');
+				$(this).attr('checked', true);
+				
+				if($('#requests').attr('checked')) {
+					$('#lessonRequests').show();
+					$('#lessonTime').hide();
+				} else {
+					$('#lessonRequests').hide();
+					$('#lessonTime').show();
+				}
+			});
+		});
+	</script>
+</html>

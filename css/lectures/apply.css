@@ -1,0 +1,56 @@
+.wraper{
+	padding: 0 15px 40px;
+}
+.weui-cells__title{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 16px;
+	color: #565656;
+}
+.weui-cell{
+	padding: 0;
+}
+.weui-cells:before, .weui-cells:after{
+	border: 0;
+}
+.weui-cell__bd{
+	border: 1px solid #D2D0D0;
+	padding: 0 6px;
+}
+.weui-input{
+	height: 30px;
+}
+.yh-cells .weui-cell__bd{
+	border: 0;
+	padding: 8px 6px;
+}
+.yh-cells .weui-cell:before{
+	border: 0;
+}
+.yh-cells .weui-check__label{
+	float: left;
+}
+.yh-cells .yh-cell-6{
+	width: 50%;
+}
+.yh-cells .yh-cell-4{
+	width: 33.3333333333%;
+}
+.yh-cells .weui-check__label p{
+	font-size: 14px;
+	color: #6E6E6E;
+}
+.yh-cells .weui-icon-checked{
+	width: 29px;
+}
+
+.wraper #yh-btn-bd{
+	position: static;
+	margin-top: 15%;
+	border-radius: 5px;
+}
+.wraper .yh-page-bd .weui-btn_default{
+	background-color: #1479BF;
+	color: #FFFFFF;
+	border-radius: 4px;
+}

@@ -1,0 +1,247 @@
+html,body{height: 100%;}
+
+.detail-header{
+	width: 100%;
+	height: 46%;
+	position: fixed;
+	top: 0;
+	/*background-color: #F5F5F5;*/
+	z-index: 99;
+}
+.detail-article{
+	width: 100%;
+	height: 54%;
+	overflow-y: scroll;
+	position: fixed;
+	top: calc(46% + 45px);
+}
+.detail-header .lessonPic{
+	width: 100%;
+	height: 70%;
+}
+.detail-header .lessonPic img{
+	width: 100%;
+	height: 100%;
+}
+.lessonDetails{
+	height: 23%;
+	padding: 3.8% 2% 2%;
+	background-color: #FFFFFF;
+}
+.lessonDetails .detail{
+	height: 50%;
+}
+.lessonDetails .detail-1 .count{
+	color: #515151;
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+}
+.lessonDetails .detail-1 .count .count-op{
+	margin-right: 10px;
+}
+.lessonDetails .detail-1 .count .count-op:last-child{
+	margin-right: 0;
+}
+.lessonDetails .detail .weui-btn-area{
+	float: right;
+	margin: 0;
+}
+.lessonDetails .detail .weui-btn-area .yh-btn{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	background-color: #1479BF;
+}
+.lessonDetails .detail .weui-btn-area .quiz{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.lessonDetails .detail-2 .detail-child{
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	position: relative;
+	top: 2px;
+}
+.lessonDetails .detail-2 .star-score{
+	font-size: 14px;
+	color: #515151;
+	position: relative;
+	top: -1px;
+}
+.lessonDetails .detail-2 .detail-lesson-type{
+	color: #262626;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	float: right;
+}
+.detail-lesson-type .detail-lesson-text{
+	color: #D8D5D5;
+	padding-left: 4px;
+}
+@media only screen and (max-width: 320px) {
+	.detail-lesson-type .detail-lesson-text{
+		padding-left: 0;
+	}
+	
+	.lessonDetails .detail .weui-btn-area .yh-btn, .lessonDetails .detail .weui-btn-area .quiz{
+		padding-left: 5px;
+		padding-right: 5px;
+		line-height: 24px;
+	}
+	
+	.lessonDetails .detail-1 .count .count-op{
+		margin-right: 4px;
+	}
+}
+.detail-lesson-type .lesson-status{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #D8D5D5;
+	position: relative;
+	top: 2px;
+}
+.detail-lesson-type .status-on{
+	background-color: #6BBD74;
+}
+.on-text{
+	color: #222222;
+}
+
+.lessonDetails .y-star{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/star_null.png) no-repeat;
+	background-size: 15px;
+}
+.y-on{
+	background: url(../img/star_full.png) no-repeat !important;
+	background-size: 15px !important;
+}
+.y-half{
+	background: url(../img/star_half.png) no-repeat !important;
+	background-size: 15px !important;
+}
+
+.lesson-nav{
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	position: fixed;
+	top: 46.1%;
+	background-color: #F5F5F5;
+	border-top: 1px solid #D8D8D8;
+}
+.lesson-nav .lesson-nav-a{
+	display: inline-block;
+	font-weight: bold;
+	/*font-size: 15px;*/
+	color: #222222;
+	height: 43px;
+	line-height: 45px;
+	width: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.lesson-nav-on{
+	color: #2374BA !important;
+	border-bottom: 2px solid #2374BA !important;
+}
+.details-bottom{
+	font-size: 14px;
+	color: #515151;
+}
+.details-bottom .abstract-text{
+	padding: 10px;
+}
+.details-bottom .suit .suit-title{
+	padding: 10px;
+	color: #222222;
+	font-size: 14px;
+}
+.details-bottom .suit .suit-content{
+	padding: 0 10px 10px;
+}
+.details-bottom .suit .teacher{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	margin-right: 1em;	
+}
+.details-bottom .suit .teacher-name{
+	border: 0;
+	padding: 5px;
+	font-size: 13px;
+}
+.details-bottom .suit .weui-media-box__desc{
+	padding: 5px;
+}
+.bot-line{
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.detail-article .outline-con .weui-media-box__bd{
+	height: 35px;
+	padding: 0 10px 2px;
+	border-bottom: 1px solid #D8D8D8;
+}
+.detail-article .evaluate-con{
+	padding-left: 10px;
+}
+.detail-article .evaluate-con .student{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 1em;
+	overflow: hidden;
+	position: relative;
+	top: -10px;
+}
+.detail-article .evaluate-con .student-name{
+	border: 0;
+	padding: 0 10px 5px 0;
+	font-size: 13px;
+}
+.detail-article .evaluate-con .weui-media-box__bd{
+	height: 80px;
+	border-bottom: 1px solid #D8D8D8;
+}
+.detail-article .evaluate-con .weui-media-box__desc{
+	padding-right: 10px;
+	-webkit-line-clamp: 3;
+}
+
+.dialog-title{
+	text-align: center;
+	padding: 10px;
+}
+.select-label{
+	font-size: 14px;
+	display: inline-block;
+	width: 30%;
+	height: 36px;
+	line-height: 36px;
+}
+.dialog-content{
+	padding: 0 10px 20px;
+}
+.dialog-content .weui-cell_select{
+	display: inline-block;
+	width: 66%;
+}
+.dialog-content .yh-select{
+	background-color: inherit;
+}
+.dialog-content .weui-cell:before{
+	border: 0;
+}
